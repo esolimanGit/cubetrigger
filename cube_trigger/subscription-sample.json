@@ -1,0 +1,38 @@
+{
+    "intranetId": "isap@ibm.com",
+    "downstream": "iSAP",
+    "objectName": "REVENUE_COST_FACT",
+    "filtration": [
+        {
+            "columnName": "COUNTRY",
+            "objectType": "Dimension",
+            "objectName": "GEOGRAPHY_V2_DIMENSION",
+            "columns": [
+                {
+                    "columnName": "CODE",
+                    "values": [
+                        "EMEA",
+                        "AP",
+                        "US"
+                    ]
+                }
+            ]
+        },
+        {
+            "columnName": "UNIT",
+            "objectType": "Dimension",
+            "objectName": "UNIT_V2_DIMENSION",
+            "columns": [
+                {
+                    "columnName": "CODE",
+                    "values": [
+                        "26",
+                        "J8",
+                        "F9"
+                    ]
+                }
+            ]
+        }
+    ],
+    "callback": "unknown for now"
+}
